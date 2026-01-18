@@ -57,6 +57,45 @@ main {
     padding: 20px 24px;
 }
 
+.chat-ul {
+    padding: 8px;
+}
+
+.chat-li {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 20px;
+    color: rgb(120, 120, 120);
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+        background-color: rgb(38, 38, 45);
+    }
+
+    .chat-user-thumb {
+        flex-shrink: 0;
+        img {
+            width: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    .chat-user {
+        flex-grow: 1;
+
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .chat-time {
+        font-size: 12px;
+    }
+}
+
 footer {
     background-color: rgb(45, 45, 50);
 
